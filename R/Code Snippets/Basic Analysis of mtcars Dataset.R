@@ -32,4 +32,10 @@ pwr.to.weight <- df2[1]/df2[2] #Calculate power-to-weight ratio
 
 pwr.to.weight #Check Column name
 ?mtcars #To check the units, discovered weight is in 1000lbs units
+pwr.to.weight <- pwr.to.weight/1000 #Corrected values to HP/LBS
+names(pwr.to.weight) <- c("pwr-to-wt")
+
+#Find vehicle with largest power-to-weight ratio
+row.names(pwr.to.weight)[which.max(pwr.to.weight$'pwr-to-wt')]
+
 
