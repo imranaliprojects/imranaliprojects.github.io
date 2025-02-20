@@ -1,4 +1,5 @@
-# Completed-Projects
-These are projects that I worked on, whether as part of an assignment or on my own.
+# Personal Projects and Code Snippets
 
-The languages in this repository include CSS, HTML, Java, Python, R, and SQL.
+Included in this repository are projects and code snippets that I either completed or I am currently working on.
+
+The languages in this repository will include CSS, HTML, Java, Python, R, and SQL.
