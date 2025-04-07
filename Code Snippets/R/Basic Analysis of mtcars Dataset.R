@@ -56,32 +56,3 @@ barplot(top.five, names.arg = names(top.five),
         main = "Top Five Vehicle models by Power-to-Weight Ratio (1973-1974)",
         xlab = "Vehicle Make and Model",
         ylab = "Power-to-weight Ratio (HP/LBS)")
-
-
-
-#----------------------------------------------------------------------------
-#Model the relationship between displacement and horsepower.
-#Compare how strong the relationship is between 1973-1974 models vs.
-#1993 vehicle models.
-#----------------------------------------------------------------------------
-
-#For 1993 vehicle models, we are using "Cars93".
-#For 1973-1974 vehicle models, we are using "mtcars".
-
-#We are testing if, for vehicle models from 1973-1974, there is a stronger
-#correlation between engine displacement and horsepower than for vehicle models
-#from 1993.
-
-#Detach mtcars since we are using two different datasets:
-detach(mtcars)
-
-plot(mtcars$disp~mtcars$hp)
-res <- lm(mtcars$disp~mtcars$hp)
-res
-abline(res,col="blue")
-?aov()
-aov(mtcars$disp~mtcars$hp, mtcars)
-cor(mtcars$disp,mtcars$hp)
-plot(Cars93$EngineSize~Cars93$Horsepower)
-cor(Cars93$EngineSize,Cars93$Horsepower)
-
