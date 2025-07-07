@@ -1,0 +1,1 @@
+This repository contains projects that are either completed or in-progress.
